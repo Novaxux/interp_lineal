@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="content">
+       
+        <div class="article">
+            
+           
+                <div class="titulo">
+                    <h1>Interpolación lineal</h1>
+                </div>
+
+                <label for="">Ingrese el valor de x</label><br>
+                <input type="number" id="x"><br>
+                <label for="">Ingrese el valor de x0</label><br>
+                <input type="number" id="x0"><br>
+                <label for="">Ingrese el valor de f(x0)</label><br>
+                <input type="number" id="fx0"><br>
+                <label for="">Ingrese el valor de x1</label><br>
+                <input type="number" id="x1"><br>
+                <label for="">Ingrese el valor de (fx1)</label><br>
+                <input type="number" id="fx1"><br>
+                <br>
+                <button onclick=calcular()>calcular</button>
+            
+                <p id="resultado"></p>
+            
+            
+        </div>
+        <div class="article ">
+            <h1>Error Relativo</h1>
+
+            <label for="">Ingrese el valor exacto</label><br>
+            <input type="number" id="valExact"><br>
+            <br>
+            <button onclick=calcular_err_rel()>calcular</button>
+        
+            <p id="resultado2"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
