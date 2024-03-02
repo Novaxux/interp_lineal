@@ -9,41 +9,53 @@
 <body>
 
     <div class="content">
-       
-        <div class="article">
-            
-           
-                <div class="titulo">
-                    <h1>Interpolación lineal</h1>
+       <div class="section">
+
+           <div class="article">
+               <div class="titulo">
+                   <h1>Interpolación lineal</h1>
                 </div>
 
-                <label for="">Ingrese el valor de x</label><br>
-                <input type="number" id="x"><br>
-                <label for="">Ingrese el valor de x0</label><br>
-                <input type="number" id="x0"><br>
-                <label for="">Ingrese el valor de f(x0)</label><br>
-                <input type="number" id="fx0"><br>
-                <label for="">Ingrese el valor de x1</label><br>
-                <input type="number" id="x1"><br>
-                <label for="">Ingrese el valor de (fx1)</label><br>
-                <input type="number" id="fx1"><br>
-                <br>
-                <button onclick=calcular()>calcular</button>
-            
-                <p id="resultado"></p>
-            
-            
-        </div>
-        <div class="article ">
-            <h1>Error Relativo</h1>
+                <label for="">Ingrese el valor de x</label>
+                <input type="number" id="x">
+                <button class="limpiar" onclick="limpiar()">limpiar</button>
+                <label for="">Ingrese el valor de x0</label>
+                <input type="number" id="x0">
+                <button class="limpiar" onclick="limpiarx0()">limpiar</button>
+                <label for="">Ingrese el valor de f(x0)</label>
+                <input type="number" id="fx0">
+                <button class="limpiar" onclick="limpiarfx0()">limpiar</button>
+                <label for="">Ingrese el valor de x1</label>
+                <input type="number" id="x1">
+                <button class="limpiar" onclick="limpiarx1()">limpiar</button>
+                <label for="">Ingrese el valor de (fx1)</label>
+                <input type="number" id="fx1">
+                <button class="limpiar" onclick="limpiarfx1()">limpiar</button>
 
-            <label for="">Ingrese el valor exacto</label><br>
-            <input type="number" id="valExact"><br>
-            <br>
-            <button onclick=calcular_err_rel()>calcular</button>
-        
-            <p id="resultado2"></p>
+                
+                <button onclick=calcular() class="calcular">calcular</button>
+                
+                <p id="resultado" >Resultado</p>
+                
+                
+            </div>
         </div>
+        <div class="section2">
+
+            <div class="ajustarBox">
+                <div class="article">
+
+                    <h1>Error Relativo</h1>
+                    
+                <label for="">Ingrese el valor exacto</label>
+                <input type="number" id="valExact">
+                <button class="limpiar" onclick="limpiar_err_rel()">limpiar</button>
+                <button onclick=calcular_err_rel() class="calcular">calcular</button>
+                
+                <p id="resultado2">Resultado</p>
+                </div>
+            
+             </div>
     </div>
 
     <script src="app.js"></script>

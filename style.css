@@ -1,22 +1,35 @@
-
+.ajustarBox{
+    height: 50%;
+    width: 100%;
+}
 .article{
     padding: 25px;
-    margin: auto;
+    margin-left: auto;
     margin-top: 50px;
     background-color: rgba(251, 255, 255, 0.3);
     border-radius: 45px;
-    width:20%;
-    text-align: left;
-
+    width:40%;
+    margin: 30px;
     }
+
 .content{
     margin-top: 100px;
-
+    display: flex;
+    /* background-color: #16e7bd46; */
 }
-
+.section{
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}
+.section2{
+    display: flex;
+    justify-content: left;
+    width: 50%; 
+}
 body{
-    background-image: linear-gradient(to bottom, #e31414, #ae7c00, #68a831, #00c29c, #12d1eb);
-    margin-bottom: 500px;
+    background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    margin-bottom: 100px;
 }  
 
 button{
@@ -26,6 +39,7 @@ button{
     background-color: rgba(0, 0, 0, 0.915);
     border: none;
     color: whitesmoke;
+    font-weight: bold;
 }
 button:hover{
     background-color: rgba(255, 255, 255, 0.722);
@@ -34,10 +48,27 @@ button:hover{
 input{
     border: none;
     border-radius: 10px;
-    width: 100%;
+    width: 70%;
     height: 30px;
+}
+input:hover{
+    background-color: rgba(255, 255, 255, 0.162);
 }
 label{
     text-align: left;
     border-radius: 5px;
+}
+#resultado{
+    text-align: center;
+}
+#resultado2{
+    text-align: center;
+}
+.limpiar{
+    width: 27%;
+    background-color: #1289eb;
+    color: black;
+}
+.calcular{
+    margin-top: 10px;
 }

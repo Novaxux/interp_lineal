@@ -15,9 +15,10 @@ function calcular (){
         return document.getElementById('resultado').innerHTML='f(x)'+' = ' + fx
     }else
         document.getElementById('resultado').innerHTML='Error, todos los campos son obligatorios'
+        document.getElementById('resultado').value = ''
 }
 
-function calcular_err_rel (){     
+function calcular_err_rel (){ 
 
     let valExact = Number (document.getElementById('valExact').value)
     let fx = Number(document.getElementById('resultado').value)
@@ -31,3 +32,32 @@ function calcular_err_rel (){
         document.getElementById('resultado2').innerHTML='Error llene los campos solicitados'
 }
 
+function limpiar(){
+    return document.getElementById('x').value= '',
+    document.getElementById('resultado').innerHTML=''
+}
+
+function limpiarx0(){
+    return document.getElementById('x0').value= '',
+    document.getElementById('resultado').innerHTML=''
+}
+
+function limpiarfx0(){
+    return document.getElementById('fx0').value= '',
+    document.getElementById('resultado').innerHTML=''
+}
+
+function limpiarx1(){
+    return document.getElementById('x1').value= '',
+    document.getElementById('resultado').innerHTML=''
+}
+
+function limpiarfx1(){
+    return document.getElementById('fx1').value= '',
+    document.getElementById('resultado').innerHTML=''
+}
+
+function limpiar_err_rel(){
+    return document.getElementById('valExact').value= '', 
+    document.getElementById('resultado2').innerHTML=''
+}
